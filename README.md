@@ -1,6 +1,5 @@
 # VisualVisioCopilotLight
 This application helps you to create Visio Diagrams using Copilot responses.
-This application helps you to create Visio Diagrams using Copilot.
 Just ask copilot the type of diagram you want to create? Don't forget to tell copilot to create the diagram using Mermaid syntax.
 
 If you just want to use it, the installer is in the "VisualVisioCopilotLight/Installer
