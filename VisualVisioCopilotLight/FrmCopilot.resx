@@ -117,4 +117,376 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="splitCopilotContainer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="splitCopilotContainer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="btnNavigate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="btnNavigate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>646, 9</value>
+  </data>
+  <data name="btnNavigate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 23</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnNavigate.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="btnNavigate.Text" xml:space="preserve">
+    <value>Go</value>
+  </data>
+  <data name="&gt;&gt;btnNavigate.Name" xml:space="preserve">
+    <value>btnNavigate</value>
+  </data>
+  <data name="&gt;&gt;btnNavigate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnNavigate.Parent" xml:space="preserve">
+    <value>splitCopilotContainer.Panel1</value>
+  </data>
+  <data name="&gt;&gt;btnNavigate.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="edTextUrl.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="edTextUrl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>78, 11</value>
+  </data>
+  <data name="edTextUrl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>562, 20</value>
+  </data>
+  <data name="edTextUrl.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="edTextUrl.Text" xml:space="preserve">
+    <value>https://copilot.microsoft.com</value>
+  </data>
+  <data name="&gt;&gt;edTextUrl.Name" xml:space="preserve">
+    <value>edTextUrl</value>
+  </data>
+  <data name="&gt;&gt;edTextUrl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;edTextUrl.Parent" xml:space="preserve">
+    <value>splitCopilotContainer.Panel1</value>
+  </data>
+  <data name="&gt;&gt;edTextUrl.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnHome.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 9</value>
+  </data>
+  <data name="btnHome.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 23</value>
+  </data>
+  <data name="btnHome.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="btnHome.Text" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="&gt;&gt;btnHome.Name" xml:space="preserve">
+    <value>btnHome</value>
+  </data>
+  <data name="&gt;&gt;btnHome.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnHome.Parent" xml:space="preserve">
+    <value>splitCopilotContainer.Panel1</value>
+  </data>
+  <data name="&gt;&gt;btnHome.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="webCopilotView.AccessibleName" xml:space="preserve">
+    <value>webCopilotView</value>
+  </data>
+  <data name="webCopilotView.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="webCopilotView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 38</value>
+  </data>
+  <data name="webCopilotView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>671, 434</value>
+  </data>
+  <data name="webCopilotView.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;webCopilotView.Name" xml:space="preserve">
+    <value>webCopilotView</value>
+  </data>
+  <data name="&gt;&gt;webCopilotView.Type" xml:space="preserve">
+    <value>Microsoft.Web.WebView2.WinForms.WebView2, Microsoft.Web.WebView2.WinForms, Version=1.0.3124.44, Culture=neutral, PublicKeyToken=2a8ab48044d2601e</value>
+  </data>
+  <data name="&gt;&gt;webCopilotView.Parent" xml:space="preserve">
+    <value>splitCopilotContainer.Panel1</value>
+  </data>
+  <data name="&gt;&gt;webCopilotView.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;splitCopilotContainer.Panel1.Name" xml:space="preserve">
+    <value>splitCopilotContainer.Panel1</value>
+  </data>
+  <data name="&gt;&gt;splitCopilotContainer.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitCopilotContainer.Panel1.Parent" xml:space="preserve">
+    <value>splitCopilotContainer</value>
+  </data>
+  <data name="&gt;&gt;splitCopilotContainer.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="splitSVGContainer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="splitSVGContainer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="splitSVGContainer.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="edMermaidText.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="edMermaidText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 12</value>
+  </data>
+  <data name="edMermaidText.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="edMermaidText.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Vertical</value>
+  </data>
+  <data name="edMermaidText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>484, 188</value>
+  </data>
+  <data name="edMermaidText.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;edMermaidText.Name" xml:space="preserve">
+    <value>edMermaidText</value>
+  </data>
+  <data name="&gt;&gt;edMermaidText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;edMermaidText.Parent" xml:space="preserve">
+    <value>splitSVGContainer.Panel1</value>
+  </data>
+  <data name="&gt;&gt;edMermaidText.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnGenerate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="btnGenerate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>194, 206</value>
+  </data>
+  <data name="btnGenerate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 23</value>
+  </data>
+  <data name="btnGenerate.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnGenerate.Text" xml:space="preserve">
+    <value>Generate diagram</value>
+  </data>
+  <data name="&gt;&gt;btnGenerate.Name" xml:space="preserve">
+    <value>btnGenerate</value>
+  </data>
+  <data name="&gt;&gt;btnGenerate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnGenerate.Parent" xml:space="preserve">
+    <value>splitSVGContainer.Panel1</value>
+  </data>
+  <data name="&gt;&gt;btnGenerate.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;splitSVGContainer.Panel1.Name" xml:space="preserve">
+    <value>splitSVGContainer.Panel1</value>
+  </data>
+  <data name="&gt;&gt;splitSVGContainer.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitSVGContainer.Panel1.Parent" xml:space="preserve">
+    <value>splitSVGContainer</value>
+  </data>
+  <data name="&gt;&gt;splitSVGContainer.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="edSVG.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left</value>
+  </data>
+  <data name="edSVG.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 6</value>
+  </data>
+  <data name="edSVG.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="edSVG.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Both</value>
+  </data>
+  <data name="edSVG.Size" type="System.Drawing.Size, System.Drawing">
+    <value>488, 187</value>
+  </data>
+  <data name="edSVG.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;edSVG.Name" xml:space="preserve">
+    <value>edSVG</value>
+  </data>
+  <data name="&gt;&gt;edSVG.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;edSVG.Parent" xml:space="preserve">
+    <value>splitSVGContainer.Panel2</value>
+  </data>
+  <data name="&gt;&gt;edSVG.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnPngVisioInsert.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="btnPngVisioInsert.Location" type="System.Drawing.Point, System.Drawing">
+    <value>106, 199</value>
+  </data>
+  <data name="btnPngVisioInsert.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 23</value>
+  </data>
+  <data name="btnPngVisioInsert.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnPngVisioInsert.Text" xml:space="preserve">
+    <value>Insert Diagram as PNG</value>
+  </data>
+  <data name="&gt;&gt;btnPngVisioInsert.Name" xml:space="preserve">
+    <value>btnPngVisioInsert</value>
+  </data>
+  <data name="&gt;&gt;btnPngVisioInsert.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnPngVisioInsert.Parent" xml:space="preserve">
+    <value>splitSVGContainer.Panel2</value>
+  </data>
+  <data name="&gt;&gt;btnPngVisioInsert.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnNativeVisioInsert.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="btnNativeVisioInsert.Location" type="System.Drawing.Point, System.Drawing">
+    <value>252, 199</value>
+  </data>
+  <data name="btnNativeVisioInsert.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 23</value>
+  </data>
+  <data name="btnNativeVisioInsert.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="btnNativeVisioInsert.Text" xml:space="preserve">
+    <value>Insert Diagram as Visio</value>
+  </data>
+  <data name="&gt;&gt;btnNativeVisioInsert.Name" xml:space="preserve">
+    <value>btnNativeVisioInsert</value>
+  </data>
+  <data name="&gt;&gt;btnNativeVisioInsert.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnNativeVisioInsert.Parent" xml:space="preserve">
+    <value>splitSVGContainer.Panel2</value>
+  </data>
+  <data name="&gt;&gt;btnNativeVisioInsert.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;splitSVGContainer.Panel2.Name" xml:space="preserve">
+    <value>splitSVGContainer.Panel2</value>
+  </data>
+  <data name="&gt;&gt;splitSVGContainer.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitSVGContainer.Panel2.Parent" xml:space="preserve">
+    <value>splitSVGContainer</value>
+  </data>
+  <data name="&gt;&gt;splitSVGContainer.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="splitSVGContainer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>503, 476</value>
+  </data>
+  <data name="splitSVGContainer.SplitterDistance" type="System.Int32, mscorlib">
+    <value>238</value>
+  </data>
+  <data name="splitSVGContainer.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;splitSVGContainer.Name" xml:space="preserve">
+    <value>splitSVGContainer</value>
+  </data>
+  <data name="&gt;&gt;splitSVGContainer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitSVGContainer.Parent" xml:space="preserve">
+    <value>splitCopilotContainer.Panel2</value>
+  </data>
+  <data name="&gt;&gt;splitSVGContainer.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitCopilotContainer.Panel2.Name" xml:space="preserve">
+    <value>splitCopilotContainer.Panel2</value>
+  </data>
+  <data name="&gt;&gt;splitCopilotContainer.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitCopilotContainer.Panel2.Parent" xml:space="preserve">
+    <value>splitCopilotContainer</value>
+  </data>
+  <data name="&gt;&gt;splitCopilotContainer.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="splitCopilotContainer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1197, 476</value>
+  </data>
+  <data name="splitCopilotContainer.SplitterDistance" type="System.Int32, mscorlib">
+    <value>690</value>
+  </data>
+  <data name="splitCopilotContainer.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitCopilotContainer.Name" xml:space="preserve">
+    <value>splitCopilotContainer</value>
+  </data>
+  <data name="&gt;&gt;splitCopilotContainer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitCopilotContainer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;splitCopilotContainer.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1197, 476</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Copilot Visio Diagram</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FrmCopilot</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

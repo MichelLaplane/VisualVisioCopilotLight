@@ -1,0 +1,148 @@
+﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs" xmlns:ui="http://wixtoolset.org/schemas/v4/wxs/ui">
+  <Package Id="VisualVisioCopilotLight.SetUp" Name="VisualVisioCopilotLight" Manufacturer="VisualVisioCopilotLight" Version="1.0.0.0" ProductCode="1350A611-D13B-4C40-AB1A-1A762B800002" UpgradeCode="95DB25F7-42E5-48A0-839C-4C334F2FD817">
+    <MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeError)" />
+
+    <Feature Id="ProductFeature" Title="VisualVisioCopilotLight" Description="Generate Visio Diagrams with Copilot." Level="1" Display="expand" ConfigurableDirectory="INSTALLDIR">
+      <ComponentRef Id="VisualVisioCopilotLightProgram" />
+
+      <Feature Id="MainProgram" Title="Program" Description="The main executable." Level="1">
+        <ComponentRef Id="VisualVisioCopilotLightProgram" />
+        <ComponentRef Id="ProgramMenuDir" />
+        <ComponentRef Id="RegistryEntries" />
+        <ComponentRef Id="Ressources" />
+      </Feature>
+
+      <Feature Id="StencilFeature" Title="Stencils" Description="The stencils of the solution." Level="1">
+        <ComponentRef Id="Stencils" />
+      </Feature>
+
+      <Feature Id="TemplateFeature" Title="Templates" Description="The templates of the solution." Level="1">
+        <ComponentRef Id="Templates" />
+      </Feature>
+
+      <Feature Id="ProjectFeature" Title="Projects" Description="The projects of the solution." Level="1">
+        <ComponentRef Id="Projects" />
+        <ComponentRef Id="ProjectsRem" />
+        <ComponentRef Id="ProjectsRem1" />
+      </Feature>
+    </Feature>
+
+    <WixVariable Id="WixUILicenseRtf" Value="ToInstall\Setup files\License.rtf" />
+    <WixVariable Id="WixUIBannerBmp" Value="ToInstall\Bitmap\Pannel.bmp" />
+    <WixVariable Id="WixUIDialogBmp" Value="ToInstall\Bitmap\DialogBmp1.bmp" />
+
+    <ui:WixUI Id="WixUI_Mondo" />
+    <UIRef Id="WixUI_ErrorProgressText" />
+
+    <Icon Id="VisualVisioCopilotLight.ico" SourceFile="ToInstall\Icons\VisualVisioCopilotLight.ico" />
+    <Property Id="ARPPRODUCTICON" Value="VisualVisioCopilotLight.ico" />
+
+
+    <StandardDirectory Id="ProgramFilesFolder">
+      <Directory Id="INSTALLDIR" Name="VisualVisioCopilotLight">
+        <!--Addin VSTO-->
+        <Component Id="VisualVisioCopilotLightProgram" Guid="05D0C8AB-6E0D-4DF1-B37A-413591CB0BE6">
+          <File Id="VisualVisioCopilotLightVSTO" Name="VisualVisioCopilotLight.vsto" Source="ToInstall\Application32\VisualVisioCopilotLight.vsto" KeyPath="yes">
+            <Shortcut Id="startmenuVisualVisioCopilotLight" Directory="ProgramMenuDir" Name="VisualVisioCopilotLight" WorkingDirectory="INSTALLDIR" Icon="VisualVisioCopilotLight.ico" IconIndex="0" Advertise="yes" />
+            <Shortcut Id="desktopVisualVisioCopilotLight" Directory="DesktopFolder" Name="VisualVisioCopilotLight" WorkingDirectory="INSTALLDIR" Icon="VisualVisioCopilotLight.ico" IconIndex="0" Advertise="yes" />
+          </File>
+          <File Id="VisualVisioCopilotLight.dll" Name="VisualVisioCopilotLight.dll" Source="ToInstall\Application32\VisualVisioCopilotLight.dll" />
+          <!--Addin VisualVisioCopilotLight Dynamic Library -->
+          <File Id="VisualVisioCopilotLight.dll.manifest" Name="VisualVisioCopilotLight.dll.manifest" Source="ToInstall\Application32\VisualVisioCopilotLight.dll.manifest" />
+          <!--Addin Office Tools Dynamic Library -->
+          <File Id="Microsoft.Office.Tools.Common.v4.0.Utilities.dll" Name="Microsoft.Office.Tools.Common.v4.0.Utilities.dll" Source="ToInstall\Application32\Microsoft.Office.Tools.Common.v4.0.Utilities.dll" />
+          <File Id="ExCSS.dll" Name="ExCSS.dll" Source="ToInstall\Application32\ExCSS.dll" />
+          <File Id="Svg.dll" Name="Svg.dll" Source="ToInstall\Application32\Svg.dll" />
+          <File Id="System.Buffers.dll" Name="System.Buffers.dll" Source="ToInstall\Application32\System.Buffers.dll" />
+          <File Id="System.Memory.dll" Name="System.Memory.dll" Source="ToInstall\Application32\System.Memory.dll" />
+          <File Id="System.Numerics.Vectors.dll" Name="System.Numerics.Vectors.dll" Source="ToInstall\Application32\System.Numerics.Vectors.dll" />
+          <File Id="System.Runtime.CompilerServices.Unsafe.dll" Name="System.Runtime.CompilerServices.Unsafe.dll" Source="ToInstall\Application32\System.Runtime.CompilerServices.Unsafe.dll" />
+          <File Id="Microsoft.Web.WebView2.Core.dll" Name="Microsoft.Web.WebView2.Core.dll" Source="ToInstall\Application32\Microsoft.Web.WebView2.Core.dll" />
+          <File Id="Microsoft.Web.WebView2.DevToolsProtocolExtension.dll" Name="Microsoft.Web.WebView2.DevToolsProtocolExtension.dll" Source="ToInstall\Application32\Microsoft.Web.WebView2.DevToolsProtocolExtension.dll" />
+          <File Id="Microsoft.Web.WebView2.WinForms.dll" Name="Microsoft.Web.WebView2.WinForms.dll" Source="ToInstall\Application32\Microsoft.Web.WebView2.WinForms.dll" />
+          <File Id="WebView2.DevTools.Dom.dll" Name="WebView2.DevTools.Dom.dll" Source="ToInstall\Application32\WebView2.DevTools.Dom.dll" />
+        </Component>
+
+
+        <Directory Id="INSTALLRESSOURCE" Name="en-US">
+          <Component Id="Ressources" Guid="CE38CEAE-ACDE-4F76-B5B0-0E245965ED3C">
+            <File Id="VisualVisioCopilotLight.resources.dll" Name="VisualVisioCopilotLight.resources.dll" Source="ToInstall\Application32\VisualVisioCopilotLight.resources.dll" />
+          </Component>
+        </Directory>
+
+        <!--Addin Stencils -->
+        <Directory Id="INSTALLSTENCILS" Name="Stencils">
+          <Component Id="Stencils" Guid="47870A5D-B211-4C33-BC83-78B3F7D6F77D">
+            <File Id="StencilsVisualVisioCopilotLight" Name="VisualVisioCopilotLight.vssx" Source="ToInstall\Stencils\VisualVisioCopilotLight.vssx" KeyPath="yes" />
+          </Component>
+        </Directory>
+        <!--Addin templates -->
+        <Directory Id="INSTALLTEMPLATES" Name="Templates">
+          <Component Id="Templates" Guid="9926A316-85A9-4523-A61F-3E6343F51A56">
+            <File Id="TemplatesVisualVisioCopilotLight" Name="VisualVisioCopilotLight.vstx" Source="ToInstall\Templates\VisualVisioCopilotLight.vstx" KeyPath="yes" />
+          </Component>
+
+        </Directory>
+
+      </Directory>
+    </StandardDirectory>
+
+    <StandardDirectory Id="ProgramMenuFolder">
+      <Directory Id="ProgramMenuDir" Name="VisualVisioCopilotLight">
+        <Component Id="ProgramMenuDir" Guid="144C8B40-B867-47D6-BD6D-626C75520762">
+          <RemoveFolder Id="ProgramMenuDir" On="uninstall" />
+          <RegistryValue Root="HKCU" Key="Software\VisualVisioCopilotLight" Type="string" Value="" KeyPath="yes" />
+        </Component>
+      </Directory>
+    </StandardDirectory>
+
+    <StandardDirectory Id="PersonalFolder">
+      <Directory Id="VisualVisioCopilotLightPersonalFolder" Name="VisualVisioCopilotLight">
+        <Directory Id="INSTALLDIRPersonalFolder" Name="VisualVisioCopilotLight">
+
+          <!--Addin projects -->
+          <Directory Id="INSTALLPROJECTS" Name="Projects">
+            <Component Id="Projects" Guid="68F48DEA-BF56-42FA-B05A-0838D9A4092A">
+              <RegistryValue Root="HKCU" Key="Software\VisualVisioCopilotLight" Type="string" Value="" KeyPath="yes" />
+              <File Id="ProjectsVisualVisioCopilotLight" Name="VisualVisioCopilotLight.vsdx" Source="ToInstall\Projects\VisualVisioCopilotLight.vsdx" />
+              <RemoveFolder Id="INSTALLPROJECTS" On="uninstall" />
+            </Component>
+
+          </Directory>
+          <Component Id="ProjectsRem" Guid="601E6781-9E90-42AD-813E-91D9FEF111AA">
+            <RegistryValue Root="HKCU" Key="Software\VisualVisioCopilotLight" Type="string" Value="" KeyPath="yes" />
+            <RemoveFolder Id="VisualVisioCopilotLightPersonalFolderRem" On="uninstall" />
+          </Component>
+
+        </Directory>
+
+        <Component Id="ProjectsRem1" Guid="0D3738F4-B306-458C-85DB-FDE40B26922A">
+          <RegistryValue Root="HKCU" Key="Software\VisualVisioCopilotLight" Type="string" Value="" KeyPath="yes" />
+          <RemoveFolder Id="VisualVisioCopilotLightPersonalFolder" On="uninstall" />
+        </Component>
+
+      </Directory>
+    </StandardDirectory>
+
+    <StandardDirectory Id="DesktopFolder" />
+
+    <Component Id="RegistryEntries" Guid="3B97D1FF-9885-44E8-BD8C-EBD69F56EF0C" Directory="TARGETDIR">
+      <RegistryKey Root="HKCU" Key="Software\Microsoft\Visio\Addins\VisualVisioCopilotLight">
+        <RegistryValue Name="Description" Value="VisualVisioCopilotLight" Type="string" />
+        <RegistryValue Name="FriendlyName" Value="VisualVisioCopilotLight" Type="string" />
+        <RegistryValue Name="LoadBehavior" Value="3" Type="integer" />
+        <RegistryValue Name="Manifest" Value="file:///[INSTALLDIR]VisualVisioCopilotLight.vsto|vstolocal" Type="string" />
+      </RegistryKey>
+      <RegistryKey Root="HKCU" Key="Software\VisualVisioCopilotLight\Path">
+        <RegistryValue Name="Stencils" Value="[INSTALLDIR]Stencils" Type="string" />
+        <RegistryValue Name="Templates" Value="[INSTALLDIR]Templates" Type="string" />
+        <RegistryValue Name="Projects" Value="[INSTALLDIRPersonalFolder]Projects" Type="string" />
+        <RegistryValue Name="WebView2Environment" Value="[PersonalFolder]" Type="string" />
+      </RegistryKey>
+      <RegistryKey Root="HKCU" Key="Software\VisualVisioCopilotLight\Options">
+        <RegistryValue Name="Culture" Value="en-US" Type="string" />
+      </RegistryKey>
+    </Component>
+
+  </Package>
+</Wix>

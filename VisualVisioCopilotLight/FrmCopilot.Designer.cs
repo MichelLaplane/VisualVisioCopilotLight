@@ -28,166 +28,158 @@
     /// </summary>
     private void InitializeComponent()
       {
-      this.splitMermaidContainer = new System.Windows.Forms.SplitContainer();
+      System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCopilot));
+      this.splitCopilotContainer = new System.Windows.Forms.SplitContainer();
       this.btnNavigate = new System.Windows.Forms.Button();
       this.edTextUrl = new System.Windows.Forms.TextBox();
       this.btnHome = new System.Windows.Forms.Button();
-      this.webViewMermaid = new Microsoft.Web.WebView2.WinForms.WebView2();
-      this.btnNativeVisioInsert = new System.Windows.Forms.Button();
-      this.edMermaidSVG = new System.Windows.Forms.TextBox();
+      this.webCopilotView = new Microsoft.Web.WebView2.WinForms.WebView2();
+      this.splitSVGContainer = new System.Windows.Forms.SplitContainer();
       this.edMermaidText = new System.Windows.Forms.TextBox();
-      this.btnPngVisioInsert = new System.Windows.Forms.Button();
       this.btnGenerate = new System.Windows.Forms.Button();
-      ((System.ComponentModel.ISupportInitialize)(this.splitMermaidContainer)).BeginInit();
-      this.splitMermaidContainer.Panel1.SuspendLayout();
-      this.splitMermaidContainer.Panel2.SuspendLayout();
-      this.splitMermaidContainer.SuspendLayout();
-      ((System.ComponentModel.ISupportInitialize)(this.webViewMermaid)).BeginInit();
+      this.edSVG = new System.Windows.Forms.TextBox();
+      this.btnPngVisioInsert = new System.Windows.Forms.Button();
+      this.btnNativeVisioInsert = new System.Windows.Forms.Button();
+      ((System.ComponentModel.ISupportInitialize)(this.splitCopilotContainer)).BeginInit();
+      this.splitCopilotContainer.Panel1.SuspendLayout();
+      this.splitCopilotContainer.Panel2.SuspendLayout();
+      this.splitCopilotContainer.SuspendLayout();
+      ((System.ComponentModel.ISupportInitialize)(this.webCopilotView)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.splitSVGContainer)).BeginInit();
+      this.splitSVGContainer.Panel1.SuspendLayout();
+      this.splitSVGContainer.Panel2.SuspendLayout();
+      this.splitSVGContainer.SuspendLayout();
       this.SuspendLayout();
       // 
-      // splitMermaidContainer
+      // splitCopilotContainer
       // 
-      this.splitMermaidContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.splitMermaidContainer.Location = new System.Drawing.Point(0, 0);
-      this.splitMermaidContainer.Name = "splitMermaidContainer";
+      this.splitCopilotContainer.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+      resources.ApplyResources(this.splitCopilotContainer, "splitCopilotContainer");
+      this.splitCopilotContainer.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
+      this.splitCopilotContainer.Name = "splitCopilotContainer";
       // 
-      // splitMermaidContainer.Panel1
+      // splitCopilotContainer.Panel1
       // 
-      this.splitMermaidContainer.Panel1.Controls.Add(this.btnNavigate);
-      this.splitMermaidContainer.Panel1.Controls.Add(this.edTextUrl);
-      this.splitMermaidContainer.Panel1.Controls.Add(this.btnHome);
-      this.splitMermaidContainer.Panel1.Controls.Add(this.webViewMermaid);
+      this.splitCopilotContainer.Panel1.Controls.Add(this.btnNavigate);
+      this.splitCopilotContainer.Panel1.Controls.Add(this.edTextUrl);
+      this.splitCopilotContainer.Panel1.Controls.Add(this.btnHome);
+      this.splitCopilotContainer.Panel1.Controls.Add(this.webCopilotView);
       // 
-      // splitMermaidContainer.Panel2
+      // splitCopilotContainer.Panel2
       // 
-      this.splitMermaidContainer.Panel2.Controls.Add(this.btnNativeVisioInsert);
-      this.splitMermaidContainer.Panel2.Controls.Add(this.edMermaidSVG);
-      this.splitMermaidContainer.Panel2.Controls.Add(this.edMermaidText);
-      this.splitMermaidContainer.Panel2.Controls.Add(this.btnPngVisioInsert);
-      this.splitMermaidContainer.Panel2.Controls.Add(this.btnGenerate);
-      this.splitMermaidContainer.Size = new System.Drawing.Size(1197, 450);
-      this.splitMermaidContainer.SplitterDistance = 690;
-      this.splitMermaidContainer.TabIndex = 0;
+      this.splitCopilotContainer.Panel2.Controls.Add(this.splitSVGContainer);
       // 
       // btnNavigate
       // 
-      this.btnNavigate.Location = new System.Drawing.Point(650, 9);
+      resources.ApplyResources(this.btnNavigate, "btnNavigate");
       this.btnNavigate.Name = "btnNavigate";
-      this.btnNavigate.Size = new System.Drawing.Size(33, 23);
-      this.btnNavigate.TabIndex = 6;
-      this.btnNavigate.Text = "Go";
       this.btnNavigate.UseVisualStyleBackColor = true;
       this.btnNavigate.Click += new System.EventHandler(this.btnNavigate_Click);
       // 
       // edTextUrl
       // 
-      this.edTextUrl.Location = new System.Drawing.Point(208, 11);
+      resources.ApplyResources(this.edTextUrl, "edTextUrl");
       this.edTextUrl.Name = "edTextUrl";
-      this.edTextUrl.Size = new System.Drawing.Size(436, 20);
-      this.edTextUrl.TabIndex = 5;
-      this.edTextUrl.Text = "https://copilot.microsoft.com/onboarding";
       // 
       // btnHome
       // 
-      this.btnHome.Location = new System.Drawing.Point(12, 9);
+      resources.ApplyResources(this.btnHome, "btnHome");
       this.btnHome.Name = "btnHome";
-      this.btnHome.Size = new System.Drawing.Size(60, 23);
-      this.btnHome.TabIndex = 1;
-      this.btnHome.Text = "Home";
       this.btnHome.UseVisualStyleBackColor = true;
       this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
       // 
-      // webViewMermaid
+      // webCopilotView
       // 
-      this.webViewMermaid.AccessibleName = "webViewMermaid";
-      this.webViewMermaid.AllowExternalDrop = false;
-      this.webViewMermaid.CreationProperties = null;
-      this.webViewMermaid.DefaultBackgroundColor = System.Drawing.Color.White;
-      this.webViewMermaid.Location = new System.Drawing.Point(12, 38);
-      this.webViewMermaid.Name = "webViewMermaid";
-      this.webViewMermaid.Size = new System.Drawing.Size(675, 409);
-      this.webViewMermaid.Source = new System.Uri("https://copilot.microsoft.com/onboarding", System.UriKind.Absolute);
-      this.webViewMermaid.TabIndex = 0;
-      this.webViewMermaid.ZoomFactor = 1D;
+      resources.ApplyResources(this.webCopilotView, "webCopilotView");
+      this.webCopilotView.AllowExternalDrop = false;
+      this.webCopilotView.CreationProperties = null;
+      this.webCopilotView.DefaultBackgroundColor = System.Drawing.Color.White;
+      this.webCopilotView.Name = "webCopilotView";
+      this.webCopilotView.Source = new System.Uri("https://copilot.microsoft.com", System.UriKind.Absolute);
+      this.webCopilotView.ZoomFactor = 1D;
       // 
-      // btnNativeVisioInsert
+      // splitSVGContainer
       // 
-      this.btnNativeVisioInsert.Location = new System.Drawing.Point(203, 415);
-      this.btnNativeVisioInsert.Name = "btnNativeVisioInsert";
-      this.btnNativeVisioInsert.Size = new System.Drawing.Size(140, 23);
-      this.btnNativeVisioInsert.TabIndex = 5;
-      this.btnNativeVisioInsert.Text = "Insert Diagram as Visio";
-      this.btnNativeVisioInsert.UseVisualStyleBackColor = true;
-      this.btnNativeVisioInsert.Click += new System.EventHandler(this.btnNativeVisioInsert_Click);
+      this.splitSVGContainer.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+      resources.ApplyResources(this.splitSVGContainer, "splitSVGContainer");
+      this.splitSVGContainer.Name = "splitSVGContainer";
       // 
-      // edMermaidSVG
+      // splitSVGContainer.Panel1
       // 
-      this.edMermaidSVG.Location = new System.Drawing.Point(0, 206);
-      this.edMermaidSVG.Multiline = true;
-      this.edMermaidSVG.Name = "edMermaidSVG";
-      this.edMermaidSVG.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-      this.edMermaidSVG.Size = new System.Drawing.Size(369, 203);
-      this.edMermaidSVG.TabIndex = 2;
-      this.edMermaidSVG.TextChanged += new System.EventHandler(this.edMermaidSVG_TextChanged);
+      this.splitSVGContainer.Panel1.Controls.Add(this.edMermaidText);
+      this.splitSVGContainer.Panel1.Controls.Add(this.btnGenerate);
+      // 
+      // splitSVGContainer.Panel2
+      // 
+      this.splitSVGContainer.Panel2.Controls.Add(this.edSVG);
+      this.splitSVGContainer.Panel2.Controls.Add(this.btnPngVisioInsert);
+      this.splitSVGContainer.Panel2.Controls.Add(this.btnNativeVisioInsert);
       // 
       // edMermaidText
       // 
-      this.edMermaidText.Location = new System.Drawing.Point(0, 0);
-      this.edMermaidText.Multiline = true;
+      resources.ApplyResources(this.edMermaidText, "edMermaidText");
       this.edMermaidText.Name = "edMermaidText";
-      this.edMermaidText.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-      this.edMermaidText.Size = new System.Drawing.Size(369, 200);
-      this.edMermaidText.TabIndex = 1;
-      // 
-      // btnPngVisioInsert
-      // 
-      this.btnPngVisioInsert.Location = new System.Drawing.Point(3, 414);
-      this.btnPngVisioInsert.Name = "btnPngVisioInsert";
-      this.btnPngVisioInsert.Size = new System.Drawing.Size(140, 23);
-      this.btnPngVisioInsert.TabIndex = 0;
-      this.btnPngVisioInsert.Text = "Insert Diagram as PNG";
-      this.btnPngVisioInsert.UseVisualStyleBackColor = true;
-      this.btnPngVisioInsert.Click += new System.EventHandler(this.btnPngVisioInsert_Click);
       // 
       // btnGenerate
       // 
-      this.btnGenerate.Location = new System.Drawing.Point(380, 94);
+      resources.ApplyResources(this.btnGenerate, "btnGenerate");
       this.btnGenerate.Name = "btnGenerate";
-      this.btnGenerate.Size = new System.Drawing.Size(110, 23);
-      this.btnGenerate.TabIndex = 0;
-      this.btnGenerate.Text = "Generate diagram";
       this.btnGenerate.UseVisualStyleBackColor = true;
       this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
       // 
+      // edSVG
+      // 
+      resources.ApplyResources(this.edSVG, "edSVG");
+      this.edSVG.Name = "edSVG";
+      this.edSVG.TextChanged += new System.EventHandler(this.edSVG_TextChanged);
+      // 
+      // btnPngVisioInsert
+      // 
+      resources.ApplyResources(this.btnPngVisioInsert, "btnPngVisioInsert");
+      this.btnPngVisioInsert.Name = "btnPngVisioInsert";
+      this.btnPngVisioInsert.UseVisualStyleBackColor = true;
+      this.btnPngVisioInsert.Click += new System.EventHandler(this.btnPngVisioInsert_Click);
+      // 
+      // btnNativeVisioInsert
+      // 
+      resources.ApplyResources(this.btnNativeVisioInsert, "btnNativeVisioInsert");
+      this.btnNativeVisioInsert.Name = "btnNativeVisioInsert";
+      this.btnNativeVisioInsert.UseVisualStyleBackColor = true;
+      this.btnNativeVisioInsert.Click += new System.EventHandler(this.btnNativeInsert_Click);
+      // 
       // FrmCopilot
       // 
-      this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+      resources.ApplyResources(this, "$this");
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(1197, 450);
-      this.Controls.Add(this.splitMermaidContainer);
+      this.Controls.Add(this.splitCopilotContainer);
       this.Name = "FrmCopilot";
-      this.Text = "FrmMermaid";
-      this.splitMermaidContainer.Panel1.ResumeLayout(false);
-      this.splitMermaidContainer.Panel1.PerformLayout();
-      this.splitMermaidContainer.Panel2.ResumeLayout(false);
-      this.splitMermaidContainer.Panel2.PerformLayout();
-      ((System.ComponentModel.ISupportInitialize)(this.splitMermaidContainer)).EndInit();
-      this.splitMermaidContainer.ResumeLayout(false);
-      ((System.ComponentModel.ISupportInitialize)(this.webViewMermaid)).EndInit();
+      this.splitCopilotContainer.Panel1.ResumeLayout(false);
+      this.splitCopilotContainer.Panel1.PerformLayout();
+      this.splitCopilotContainer.Panel2.ResumeLayout(false);
+      ((System.ComponentModel.ISupportInitialize)(this.splitCopilotContainer)).EndInit();
+      this.splitCopilotContainer.ResumeLayout(false);
+      ((System.ComponentModel.ISupportInitialize)(this.webCopilotView)).EndInit();
+      this.splitSVGContainer.Panel1.ResumeLayout(false);
+      this.splitSVGContainer.Panel1.PerformLayout();
+      this.splitSVGContainer.Panel2.ResumeLayout(false);
+      this.splitSVGContainer.Panel2.PerformLayout();
+      ((System.ComponentModel.ISupportInitialize)(this.splitSVGContainer)).EndInit();
+      this.splitSVGContainer.ResumeLayout(false);
       this.ResumeLayout(false);
 
       }
 
     #endregion
-    private System.Windows.Forms.SplitContainer splitMermaidContainer;
-    private Microsoft.Web.WebView2.WinForms.WebView2 webViewMermaid;
+    private System.Windows.Forms.SplitContainer splitCopilotContainer;
+    private Microsoft.Web.WebView2.WinForms.WebView2 webCopilotView;
     private System.Windows.Forms.Button btnGenerate;
     private System.Windows.Forms.TextBox edMermaidText;
     private System.Windows.Forms.Button btnPngVisioInsert;
-    private System.Windows.Forms.TextBox edMermaidSVG;
+    private System.Windows.Forms.TextBox edSVG;
     private System.Windows.Forms.Button btnNativeVisioInsert;
     private System.Windows.Forms.Button btnHome;
     private System.Windows.Forms.TextBox edTextUrl;
     private System.Windows.Forms.Button btnNavigate;
+    private System.Windows.Forms.SplitContainer splitSVGContainer;
     }
   }

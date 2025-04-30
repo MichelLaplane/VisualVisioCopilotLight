@@ -1,0 +1,7 @@
+pasta fabri
+trancheuse
+
+2.7291666666666665
+-0.75441667768690313
+
+could you create a mermaid workflow diagram with a begin step a test step with the result of two new steps and an end test

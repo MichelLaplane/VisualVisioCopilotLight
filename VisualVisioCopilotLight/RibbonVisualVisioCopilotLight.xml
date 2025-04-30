@@ -4,7 +4,7 @@
     <tabs>
       <tab id="tabVisualVisioCopilotLight" label="VisualVisioCopilotLight">
         <group id="grpTool" label="Tools" getImage="GetImage">
-          <button id="btnCopilotForm" onAction="OnAction" label="Create fueled Copilot Visio Shapes" getImage="GetImage"  getEnabled="GetEnabled"/>
+          <button id="btnCopilotForm" onAction="OnAction" label="Create fueled Copilot Visio Diagram" getImage="GetImage"  getEnabled="GetEnabled"/>
         </group>
         <group id="grpProject" label="Help">
           <button id="btnAbout" imageMso="AnimationAudio" onAction="OnAction" label="About..." size="normal" />

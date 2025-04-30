@@ -1,6 +1,6 @@
 // About.cs
 // Librairie UtilAsm
-// Copyright © ShareVisual Michel LAPLANE
+// Copyright © Michel LAPLANE
 // All rights reserved.
 
 //-------------------------------------------------------------------------//
@@ -80,8 +80,7 @@ namespace VisualVisioCopilotLight
     /// <summary>
     /// 
     /// </summary>
-    public void InitializeModuleName(ArrayList arModuleName, string strParamDocType, string strParamDocVersion,
-                                     string strDataBaseVersion)
+    public void InitializeModuleName(ArrayList arModuleName, string strParamDocType, string strParamDocVersion)
       {
       ArrayList arItems;
       Assembly[] arAssembly;
@@ -125,7 +124,6 @@ namespace VisualVisioCopilotLight
       try
         {
         // Récupération des modules
-        //        ArrayList arItems = new ArrayList();
         Process tempProcess = Process.GetCurrentProcess();
         foreach (ProcessModule module in Process.GetCurrentProcess().Modules)
           {
@@ -149,13 +147,6 @@ namespace VisualVisioCopilotLight
           catch
             {
             }
-          lvVersionInfo.Items.Add(item);
-          //// Rajout des modules
-          //if (arModuleName.Contains(module.ModuleName.ToUpper()))
-          //  {
-          //  arItems.Add(item);
-          //  }
-
           }
         // Remise en forme de la liste pour mettre les modules de l'application
         // en tête de liste
@@ -287,13 +278,6 @@ namespace VisualVisioCopilotLight
     private void closeButton_Click(object sender, System.EventArgs e)
       {
       this.Close();
-      }
-
-    private void DlgAbout_VisibleChanged(object sender, EventArgs e)
-      {
-      //// Mise à jour des versions
-      //labStencilVersionValue.Text = strStencilVersion;
-      //labTemplateVersionValue.Text = strTemplateVersion;
       }
 
     #region Accesseurs d'attribut de l'assembly

@@ -8,11 +8,12 @@
 <body>
 <div id="diagram">
   <div class="mermaid">
-
-graph LR
-    A --- B
-    B-->C[fa:fa-ban forbidden]
-    B-->D(fa:fa-spinner);
+graph TD;
+    A[Begin] --> B[Test Step]
+    B --> C[Result 1]
+    B --> D[Result 2]
+    C --> E[End Test]
+    D --> E
 
   </div>
 </div>

@@ -1,6 +1,6 @@
 ﻿// RibbonVisualVisioCopilotLight.cs
 // Librairie VisualVisioCopilotLight
-// Copyright © ShareVisual Michel LAPLANE
+// Copyright © Michel LAPLANE
 // All rights reserved.
 
 //-------------------------------------------------------------------------//
@@ -10,18 +10,10 @@
 //-------------------------------------------------------------------------//
 
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Reflection;
 using System.Runtime.InteropServices;
-using System.Text;
 using Office = Microsoft.Office.Core;
-using Visio = Microsoft.Office.Interop.Visio;
-
-#if STRINGASM
-using StringAsm;
-#endif
 
 namespace VisualVisioCopilotLight
   {
@@ -91,17 +83,6 @@ namespace VisualVisioCopilotLight
       {
       switch (control.Id)
         {
-        case "btnProjectNew":
-          ThisAddIn.addinApplication.NewFile();
-          break;
-        case "btnProjectOpen":
-          break;
-        case "btnProjectSave":
-          break;
-        case "btnProjectSaveAs":
-          break;
-        case "btnProjectClose":
-          break;
         case "btnCopilotForm":
           // Launch SVG form
           ThisAddIn.addinApplication.DisplayCopilotWindow();
@@ -109,7 +90,25 @@ namespace VisualVisioCopilotLight
         case "btnAbout":
           ThisAddIn.addinApplication.About();
           break;
-        //backstage
+          //backstage
+        case "btnProjectNew":
+          ThisAddIn.addinApplication.NewFile();
+          break;
+        case "btnProjectOpen":
+          ThisAddIn.addinApplication.OpenFile();
+          break;
+        case "btnProjectSave":
+          ThisAddIn.addinApplication.SaveFile();
+          break;
+        case "btnProjectSaveAs":
+          ThisAddIn.addinApplication.SaveAsFile();
+          break;
+        case "btnProjectClose":
+          ThisAddIn.addinApplication.CloseFile();
+          break;
+        case "btnBackStageOptionsApplication":
+          ThisAddIn.addinApplication.Options();
+          break;
         }
       }
 
