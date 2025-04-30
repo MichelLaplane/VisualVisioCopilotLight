@@ -10,10 +10,10 @@
   <div class="mermaid">
 graph TD;
     A[Begin] --> B[Test Step]
-    B --> C[Result 1]
-    B --> D[Result 2]
+    B -->|Condition True| C[Step 1]
+    B -->|Condition False| D[Step 2]
     C --> E[End Test]
-    D --> E
+    D --> E[End Test]
 
   </div>
 </div>

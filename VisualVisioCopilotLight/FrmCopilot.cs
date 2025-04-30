@@ -78,19 +78,11 @@ graph LR
 
     private void edSVG_TextChanged(object sender, EventArgs e)
       {
-      if (edSVG.Text.Split('\n').Length > 15)
-        edSVG.ScrollBars = ScrollBars.Vertical;
-      else
-        edSVG.ScrollBars = ScrollBars.None;
+      //if (edSVG.Text.Split('\n').Length > 15)
+      //  edSVG.ScrollBars = ScrollBars.Vertical;
+      //else
+      //  edSVG.ScrollBars = ScrollBars.None;
       }
-    //private void edMermaidSVG_TextChanged(object sender, EventArgs e)
-    //  {
-    //  if (edSVG.Text.Split('\n').Length > 15)
-    //    edSVG.ScrollBars = ScrollBars.Vertical;
-    //  else
-    //    edSVG.ScrollBars = ScrollBars.None;
-    //  }
-
 
     private async void btnGenerate_Click(object sender, EventArgs e)
       {
@@ -133,8 +125,6 @@ graph LR
       try
         {
         strFullPath = System.IO.Path.Combine(VisualVisioCopilotLight.strProjectPath, VisualVisioCopilotSvgFileName);
-        System.IO.File.WriteAllText(strFullPath, edSVG.Text);
-        await CreateHtmlFromMermaidInstructionAsync();
         var svgDoc = SvgDocument.Open(strFullPath);
         var pngImage = svgDoc.Draw();
         pngImage.Save(System.IO.Path.Combine(VisualVisioCopilotLight.strProjectPath, VisualVisioCopilotPngFileName));

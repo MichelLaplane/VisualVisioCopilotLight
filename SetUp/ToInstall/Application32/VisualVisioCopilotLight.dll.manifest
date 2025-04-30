@@ -495,50 +495,50 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VisualVisioCopilotLight.dll" size="383488">
-      <assemblyIdentity name="VisualVisioCopilotLight" version="1.1.0.0" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VisualVisioCopilotLight.dll" size="382976">
+      <assemblyIdentity name="VisualVisioCopilotLight" version="1.1.1.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>EIIhZzTs9JI8g7GcoTUT5OjKJMvVCfdltCJlI8GB8uo=</dsig:DigestValue>
+        <dsig:DigestValue>5Xa5/kMtuox8cwpx23RiElczfwNAe2BBnUP/wubqSlc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="en-US\VisualVisioCopilotLight.resources.dll" size="211968">
-      <assemblyIdentity name="VisualVisioCopilotLight.resources" version="1.1.0.0" language="en-US" processorArchitecture="msil" />
+      <assemblyIdentity name="VisualVisioCopilotLight.resources" version="1.1.1.0" language="en-US" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>LqYYh9Y5RI4D0uK9vkyaFPGUFTlUpmq9FspLFxJBr9E=</dsig:DigestValue>
+        <dsig:DigestValue>xb8PxS6z5wZp+hAcXu9oUKM/QtCzQ3rWasOCZVf+Fus=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="fr\VisualVisioCopilotLight.resources.dll" size="112128">
-      <assemblyIdentity name="VisualVisioCopilotLight.resources" version="1.1.0.0" language="fr" processorArchitecture="msil" />
+      <assemblyIdentity name="VisualVisioCopilotLight.resources" version="1.1.1.0" language="fr" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ZcLI46Er+BAY8lnRxlree0n81cMXkXaFz1gJBQFiH+Q=</dsig:DigestValue>
+        <dsig:DigestValue>rbnzWajlnxGaFI7I4dIUiKDJ0Mco8l0IEkhBxE2Vmi0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="fr-FR\VisualVisioCopilotLight.resources.dll" size="162816">
-      <assemblyIdentity name="VisualVisioCopilotLight.resources" version="1.1.0.0" language="fr-FR" processorArchitecture="msil" />
+      <assemblyIdentity name="VisualVisioCopilotLight.resources" version="1.1.1.0" language="fr-FR" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>4hOPL4IwS5ZZeUxAhL2tOcUo2GAqA76rRo8t4VPbXmE=</dsig:DigestValue>
+        <dsig:DigestValue>LvlKX7+RfqGd/XD7aD35csIk9Udt+xfXzFI4AsdVuzw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -603,7 +603,7 @@
     <vstav3:entryPointsCollection>
       <vstav3:entryPoints>
         <vstav3:entryPoint class="VisualVisioCopilotLight.ThisAddIn">
-          <assemblyIdentity name="VisualVisioCopilotLight" version="1.1.0.0" language="neutral" processorArchitecture="msil" />
+          <assemblyIdentity name="VisualVisioCopilotLight" version="1.1.1.0" language="neutral" processorArchitecture="msil" />
         </vstav3:entryPoint>
       </vstav3:entryPoints>
     </vstav3:entryPointsCollection>
@@ -622,4 +622,4 @@
       </vstov4:customizations>
     </vstav3:application>
   </vstav3:addIn>
-<publisherIdentity name="CN=SURBOK001\Michel" issuerKeyHash="fef0a7331ead4e76023a7840be7cf4c11ed1e411" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>fCQ2HO3dLLypYJJEpwUo12/Zlhw=</DigestValue></Reference></SignedInfo><SignatureValue>R2JRMvEPyKZ080kz8KoUJITe9syqZJ0trsY7T++VbJSvXbxEwZ0diBd/42hbe8TGSxzj+P/rXdl1/5pf1XLvMBl6ZuCm9vcHsy2bp5akV7lgt228xGdrn+/gsYUPL4dhe9GVxdPyYYG7iYV/Fz8fhOOWTS/xlO3OrV/LPxorOgI=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>wNqtajnTHb4wt5N917j4X2MayDeTLK7qnMCnM03kBlj0CT+2VS30OyjCA/AR/Xwd3ucYwX78bvyGmMZaPZVdCqgRMNCbmOBH5CVwIMr1eeArgKHEatMAWAvLLWGCgSnwvpZALqgQUkBRW5xu4Qgh0EW+ruWvxTbcAzh1yROOWrk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="1c96d96fd72805a7449260a9bc2cdded1c36247c" Description="" Url=""><as:assemblyIdentity name="VisualVisioCopilotLight.dll" version="1.0.0.0" publicKeyToken="11f77297da6e1116" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=SURBOK001\Michel</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>VlBlLtqq6LL+W1HUi1G319SiVPU=</DigestValue></Reference></SignedInfo><SignatureValue>bBm2bgnWSAUfyH92N7joG8OHfQcm7QJY+dzgPBA8R/O+k2spN+valDrhEAXgbEbaGDDdUN8THjXHZqUGbWmgIoPBRZbmdWiALwrH0QYFNnQkU9D96qXJuWj3sqn7vqe5gQGQCLXKI9WG43UDFkPL7Z//K4+KjiXI5Mj4MlNBDPI=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>wNqtajnTHb4wt5N917j4X2MayDeTLK7qnMCnM03kBlj0CT+2VS30OyjCA/AR/Xwd3ucYwX78bvyGmMZaPZVdCqgRMNCbmOBH5CVwIMr1eeArgKHEatMAWAvLLWGCgSnwvpZALqgQUkBRW5xu4Qgh0EW+ruWvxTbcAzh1yROOWrk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB2TCCAUKgAwIBAgIQI+XSYtfkEIlBavpDFrQhFDANBgkqhkiG9w0BAQUFADArMSkwJwYDVQQDHiAAUwBVAFIAQgBPAEsAMAAwADEAXABNAGkAYwBoAGUAbDAeFw0xNzAxMTkyMDA4NDBaFw0xODAxMjAwMjA4NDBaMCsxKTAnBgNVBAMeIABTAFUAUgBCAE8ASwAwADAAMQBcAE0AaQBjAGgAZQBsMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDA2q1qOdMdvjC3k33XuPhfYxrIN5MsruqcwKczTeQGWPQJP7ZVLfQ7KMID8BH9fB3e5xjBfvxu/IaYxlo9lV0KqBEw0JuY4EfkJXAgyvV54CuAocRq0wBYC8stYYKBKfC+lkAuqBBSQFFbnG7hCCHQRb6u5a/FNtwDOHXJE45auQIDAQABMA0GCSqGSIb3DQEBBQUAA4GBADOv2Wg6D15AyQ4TNtigzIY8KuFk3JnUXokjD2eXwTwts49QJqOPCyD00Y2QLqMC6bwP12Pecq0xHVRc8qTX78O7PFA3feqrFPX2mZgOad4ARYAQan65+M//vfbbLZLruW0UIxPsf9f2qBU0tmIk1IB28QCBwzvdhwreTw9UTyby</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
+<publisherIdentity name="CN=SURBOK001\Michel" issuerKeyHash="fef0a7331ead4e76023a7840be7cf4c11ed1e411" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>WfK6jojXUZVEwjQBk34ipagcXcQ=</DigestValue></Reference></SignedInfo><SignatureValue>EgKxUdexWcuxHBEXIQY5Qek1PlxVLDwW/ngPQdJjITNQEUh4nuxKYtg6OqvBjqkyi3sOxJjr892lQ8zKaMb2jHHOQhhbq7ncpA4ZlN1UFH+Vh+PqISzvdfWXvPSjDakrKGrEwKNFnI1QkJF8X3TDGU7GmcyBwXLVGNT81vmaNbA=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>wNqtajnTHb4wt5N917j4X2MayDeTLK7qnMCnM03kBlj0CT+2VS30OyjCA/AR/Xwd3ucYwX78bvyGmMZaPZVdCqgRMNCbmOBH5CVwIMr1eeArgKHEatMAWAvLLWGCgSnwvpZALqgQUkBRW5xu4Qgh0EW+ruWvxTbcAzh1yROOWrk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="c45d1ca8a5227e930134c2449551d7888ebaf259" Description="" Url=""><as:assemblyIdentity name="VisualVisioCopilotLight.dll" version="1.0.0.0" publicKeyToken="11f77297da6e1116" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=SURBOK001\Michel</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>Nr1WqqIuqH04hjs0Uc6bNSIymZw=</DigestValue></Reference></SignedInfo><SignatureValue>edCYnatSzCui8P3NKabDUWs7xOsraDA46mtyk6bWenIsxJ8wq1Q+/ym56FEMldB4dwlf9emiCFATPOM2yPI26BelDH4nwghPhmM1LOpr/JU881aTqvFoHGR18vVhAaxMKPCl7Dje77fb4J5yu5o+TmfE94MFVsXrkHnm76SuOZk=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>wNqtajnTHb4wt5N917j4X2MayDeTLK7qnMCnM03kBlj0CT+2VS30OyjCA/AR/Xwd3ucYwX78bvyGmMZaPZVdCqgRMNCbmOBH5CVwIMr1eeArgKHEatMAWAvLLWGCgSnwvpZALqgQUkBRW5xu4Qgh0EW+ruWvxTbcAzh1yROOWrk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB2TCCAUKgAwIBAgIQI+XSYtfkEIlBavpDFrQhFDANBgkqhkiG9w0BAQUFADArMSkwJwYDVQQDHiAAUwBVAFIAQgBPAEsAMAAwADEAXABNAGkAYwBoAGUAbDAeFw0xNzAxMTkyMDA4NDBaFw0xODAxMjAwMjA4NDBaMCsxKTAnBgNVBAMeIABTAFUAUgBCAE8ASwAwADAAMQBcAE0AaQBjAGgAZQBsMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDA2q1qOdMdvjC3k33XuPhfYxrIN5MsruqcwKczTeQGWPQJP7ZVLfQ7KMID8BH9fB3e5xjBfvxu/IaYxlo9lV0KqBEw0JuY4EfkJXAgyvV54CuAocRq0wBYC8stYYKBKfC+lkAuqBBSQFFbnG7hCCHQRb6u5a/FNtwDOHXJE45auQIDAQABMA0GCSqGSIb3DQEBBQUAA4GBADOv2Wg6D15AyQ4TNtigzIY8KuFk3JnUXokjD2eXwTwts49QJqOPCyD00Y2QLqMC6bwP12Pecq0xHVRc8qTX78O7PFA3feqrFPX2mZgOad4ARYAQan65+M//vfbbLZLruW0UIxPsf9f2qBU0tmIk1IB28QCBwzvdhwreTw9UTyby</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
