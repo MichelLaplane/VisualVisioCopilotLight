@@ -27,5 +27,21 @@ The dialog box of the application is displayed
 You can see a predefined Worflow Diagram in Mermaid syntax. 
 ![GenerateDefault](https://github.com/MichelLaplane/VisualVisioCopilotLight/blob/master/VisualVisioCopilotLight/Readme/GenerateDefault.png)
 Click on "Generate diagram". The diagram will be created in SVG format.
-![CopilotVisioDialog](https://github.com/MichelLaplane/VisualVisioCopilotLight/blob/master/VisualVisioCopilotLight/Readme/CopilotVisioDialog.png)
-Click on "Insert Diagram as Visio" for createing the Visio Diagram.
+![GeneratedDefaultDiagram](https://github.com/MichelLaplane/VisualVisioCopilotLight/blob/master/VisualVisioCopilotLight/Readme/GeneratedDefaultDiagram.png)
+Click on "Insert Diagram as Visio" for creating the Visio Diagram.
+![VisioCopilotDefaultVisioDiagram](https://github.com/MichelLaplane/VisualVisioCopilotLight/blob/master/VisualVisioCopilotLight/Readme/VisioCopilotDefaultVisioDiagram.png)
+If you want to insert a png image of the diagram, clikc on "Insert Diagram as PNG". You will notice that the result is much more less accurate.
+![VisioCopilotDefaultPngDiagram](https://github.com/MichelLaplane/VisualVisioCopilotLight/blob/master/VisualVisioCopilotLight/Readme/VisioCopilotDefaultPngDiagram.png)
+Now let's ask to copilot to create my simple process diagram
+Type for example "Could you create a workflow diagram with a begin step, a test step with the result of two new steps and an end test using Mermaid syntax"
+![CopilotRequest](https://github.com/MichelLaplane/VisualVisioCopilotLight/blob/master/VisualVisioCopilotLight/Readme/CopilotRequest.png)
+Copilot is thinking and give the result. Copy the Mermaid syntax response
+![CopilotResponse](https://github.com/MichelLaplane/VisualVisioCopilotLight/blob/master/VisualVisioCopilotLight/Readme/CopilotResponse.png)
+Paste in the edit mermaid syntax textbox. Click the "Generate diagram" button to generate the svg result.
+![CopilotResponseSVGDiagram](https://github.com/MichelLaplane/VisualVisioCopilotLight/blob/master/VisualVisioCopilotLight/Readme/CopilotResponseSVGDiagram.png)
+Click "Insert Diagram as Visio" to create the Visio Diagram corresponding to hte Copilot response.
+![VisioDiagramCopilotResponse](https://github.com/MichelLaplane/VisualVisioCopilotLight/blob/master/VisualVisioCopilotLight/Readme/VisioDiagramCopilotResponse.png)
+
+
+
+
